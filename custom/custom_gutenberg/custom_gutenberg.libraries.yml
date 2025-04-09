@@ -1,0 +1,7 @@
+custom_gutenberg_blocks:
+  js:
+    js/build/index.js: {}
+  dependencies:
+    - core/drupal
+    - core/drupalSettings
+    - gutenberg/gutenberg
