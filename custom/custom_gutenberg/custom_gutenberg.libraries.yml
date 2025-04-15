@@ -1,6 +1,11 @@
 custom_gutenberg_blocks:
   js:
     js/build/index.js: {}
+  css:
+    base:
+      js/build/style-index.css: {}
+    theme:
+      js/build/index.css: { media: screen }
   dependencies:
     - core/drupal
     - core/drupalSettings

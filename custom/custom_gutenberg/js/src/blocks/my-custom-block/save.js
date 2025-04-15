@@ -6,10 +6,12 @@ export default function Save({ attributes }) {
 
   return (
     <div {...blockProps}>
+      <div className='content'>
          <RichText.Content 
         tagName="p"     // HTML element to render as
         value={content} // Content to display
       />
+      </div>
     </div>
   );
 }

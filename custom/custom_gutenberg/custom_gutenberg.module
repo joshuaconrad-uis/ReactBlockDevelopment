@@ -16,10 +16,31 @@ function custom_gutenberg_gutenberg_blocks() {
           'type' => 'string',
         ],
       ],
+      'category' => 'common',
     ],
-  ];
+
+//custom_gutenberg always stays the same but after the slash you put the name of the card you are adding
+'custom-gutenberg/uis-card' => [
+  "attributes" => [
+        'headerText' => [
+          'type' => 'string',
+        ],
+        'title' => [
+          'type' => 'string',
+        ],
+        'content' => [
+          'type' => 'string',
+        ],
+      ],
+      'category' => 'common',
+    ],
+      ];
 }
 
+
+
+
+//Should never need to touch these
 /**
  * Implements hook_library_info_alter().
  */

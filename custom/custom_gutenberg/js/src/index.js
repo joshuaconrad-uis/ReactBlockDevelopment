@@ -1,3 +1,4 @@
 import './blocks/my-custom-block/index.js';
+import './blocks/uis-card/index.js';
 
-//console.log('Custom Gutenberg blocks entry point loaded');
+//Here is where I need to add the entry file for each new block I'd like to create
