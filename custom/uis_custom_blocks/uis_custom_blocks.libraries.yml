@@ -1,4 +1,4 @@
-custom_gutenberg_blocks:
+uis_custom_blocks:
   js:
     js/build/index.js: {}
   css:

@@ -1,5 +1,5 @@
 {
-  "name": "custom-gutenberg-blocks",
+  "name": "uis-custom-blocks",
   "version": "1.0.0",
   "description": "Custom Gutenberg blocks for Drupal",
   "main": "index.js",

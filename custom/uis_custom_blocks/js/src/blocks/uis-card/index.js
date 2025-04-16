@@ -8,7 +8,7 @@ import './editor.scss';
 
 console.log('Attempting to register block:', 'custom_gutenberg/UIScard');
 
-registerBlockType('custom-gutenberg/uis-card', 
+registerBlockType('uis-custom-blocks/uis-card', 
   
   {
   title: __('UIScard'),

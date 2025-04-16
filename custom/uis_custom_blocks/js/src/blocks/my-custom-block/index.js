@@ -5,7 +5,7 @@ import save from './save.js';
 
 console.log('Attempting to register block:', 'custom_gutenberg/my-custom-block');
 
-registerBlockType('custom-gutenberg/my-custom-block', 
+registerBlockType('uis-custom-blocks/my-custom-block', 
   
   {
   title: __('My Custom Block'),
