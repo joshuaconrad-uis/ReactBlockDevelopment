@@ -31,6 +31,9 @@ function uis_custom_blocks_gutenberg_blocks() {
         'content' => [
           'type' => 'string',
         ],
+        'linkUrl' => [
+          'type' => 'string',
+        ],
       ],
       'category' => 'common',
     ],

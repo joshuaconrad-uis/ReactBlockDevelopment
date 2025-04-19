@@ -2,11 +2,14 @@ import { useBlockProps, RichText } from '@wordpress/block-editor';
 import { styles } from './styles.js';
 
 export default function Save({ attributes }) {
-  const { headerText, title, content } = attributes;
-  const blockProps = useBlockProps.save();
+  const { headerText, title, content, linkUrl } = attributes;
+  const blockProps = useBlockProps.save({
+    className: 'card-grid-item',
+  });
 
-  return (
-    <div {...blockProps} style={styles.card} className="advanced-card">
+  // Create the card content
+  const cardContent = (
+    <div style={styles.card} className="advanced-card">
       <div className="advanced-card__header" style={styles.header}>
         <div className="advanced-card__header-text" style={styles.headerText}>
           {headerText}
@@ -32,4 +35,18 @@ export default function Save({ attributes }) {
       </div>
     </div>
   );
+
+  // If there's a link URL, wrap the card in an anchor tag
+  if (linkUrl) {
+    return (
+      <div {...blockProps}>
+        <a href={linkUrl} className="advanced-card-link" style={styles.cardLink}>
+          {cardContent}
+        </a>
+      </div>
+    );
+  }
+
+  // Otherwise, just return the card
+  return <div {...blockProps}>{cardContent}</div>;
 }

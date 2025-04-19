@@ -27,6 +27,10 @@ registerBlockType('uis-custom-blocks/uis-card',
       type: 'string', 
       default: '',
     },
+    linkUrl:{
+      type: 'string',
+      default: ''
+    }
   },
   edit,
   save,
