@@ -1,11 +1,11 @@
 uis_custom_blocks:
   js:
-    js/build/index.js: {}
+    js/build/blocks.js: {}
   css:
     base:
-      js/build/style-index.css: {}
+      js/build/style-frontend.css: {}
     theme:
-      js/build/index.css: { media: screen }
+      js/build/editor.css: { media: screen }
   dependencies:
     - core/drupal
     - core/drupalSettings

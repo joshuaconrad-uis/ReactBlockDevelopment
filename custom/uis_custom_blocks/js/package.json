@@ -6,8 +6,8 @@
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "wp-scripts build",
-    "start": "wp-scripts start"
+    "build": "wp-scripts build --config webpack.config.mjs",
+    "start": "wp-scripts start --config webpack.config.mjs"
   },
   "keywords": [],
   "author": "",
