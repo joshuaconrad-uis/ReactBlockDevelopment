@@ -3,21 +3,6 @@ const require = createRequire(import.meta.url);
 
 const wpConfig = require('@wordpress/scripts/config/webpack.config');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-//import path from 'path';
-
-// Add SCSS processing rules
-// const scssRule = {
-//   test: /\.scss$/,
-//   use: [
-//     MiniCssExtractPlugin.loader,
-//     'css-loader',
-//     'sass-loader'
-//   ],
-// };
-
-// // Find the existing rules array and add our SCSS rule
-// const updatedRules = [...wpConfig.module.rules];
-// updatedRules.push(scssRule);
 
 export default {
   ...wpConfig,
@@ -36,10 +21,10 @@ export default {
     path: `${process.cwd()}/build`,
     filename: '[name].js',
   },
-  module: {
-    ...wpConfig.module,
-    //rules: updatedRules,
-  },
+  // module: {
+  //   ...wpConfig.module,
+  //   //rules: updatedRules,
+  // },
   plugins: [
     ...wpConfig.plugins,
     new MiniCssExtractPlugin({

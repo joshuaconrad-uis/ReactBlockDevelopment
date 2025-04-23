@@ -4,7 +4,7 @@ module.exports = {
   ...config,
   entry: {
     ...config.entry,
-    blocks: './blocks/index.js',
+    blocks: './blocks/index.js', 
   },
   externals: {
     ...config.externals,

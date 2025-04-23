@@ -65,3 +65,4 @@ function uis_custom_blocks_gutenberg_editor_assets() {
 function uis_custom_blocks_page_attachments(array &$attachments) {
   $attachments['#attached']['library'][] = 'uis_custom_blocks/uis_custom_blocks';
 }
+

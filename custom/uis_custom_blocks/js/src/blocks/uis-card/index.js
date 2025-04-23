@@ -2,10 +2,6 @@ import { registerBlockType } from '@wordpress/blocks';
 import { __ } from '@wordpress/i18n';
 import edit from './edit.js';
 import save from './save.js';
-// import './editor.scss';
-// import './style.scss'
-
-
 
 console.log('Attempting to register block:', 'custom_gutenberg/UIScard');
 

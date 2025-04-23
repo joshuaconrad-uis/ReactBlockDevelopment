@@ -1,6 +1,6 @@
 uis_custom_blocks:
   js:
-    js/build/blocks.js: {}
+    js/build/blocks.js: { scope: footer}
   css:
     base:
       js/build/style-frontend.css: {}
