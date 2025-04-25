@@ -15,7 +15,7 @@
   background-color: white;
   border-radius: 4px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  font-family: 'museo-sans', sans-serif;
+  //font-family: 'museo-sans', sans-serif;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   &:hover {
     transform: translateY(-5px);
@@ -126,21 +126,3 @@
   }
 }
 
-// Preview the responsive behavior in the editor
-// .is-resizing .wp-block-uis-custom-blocks-uis-card,
-// .is-selecting .wp-block-uis-custom-blocks-uis-card {
-//   outline: 1px dashed #007cba;
-// }
-
-// Editor responsive adjustments
-// @media (max-width: 900px) {
-//   .wp-block-uis-custom-blocks-uis-card {
-//     width: calc(50% - 20px);
-//   }
-// }
-
-// @media (max-width: 600px) {
-//   .wp-block-uis-custom-blocks-uis-card {
-//     width: calc(100% - 20px);
-//   }
-// }

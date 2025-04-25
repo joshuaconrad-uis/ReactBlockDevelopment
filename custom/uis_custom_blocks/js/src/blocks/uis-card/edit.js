@@ -8,18 +8,14 @@ export default function Edit({ attributes, setAttributes }) {
   const blockProps = useBlockProps();
 
   return (
-    <div {...blockProps} 
-    
+    <div className="editor-styles-uis-card">
+    <div {...blockProps}
      className="advanced-card">
-      <div className="advanced-card__header" 
-      
-      >
-        <div className="advanced-card__header-text" 
-        >
+      {/* <div className="advanced-card__header">
+        <div className="advanced-card__header-text">
           {headerText}
         </div>
-      </div>
-      
+      </div> */}
       <div className="advanced-card__title-container">
         <RichText
           tagName="h2"
@@ -31,19 +27,15 @@ export default function Edit({ attributes, setAttributes }) {
         />
       </div>
       
-      <div className="advanced-card__content"
-      >
+      <div className="advanced-card__content">
         <RichText
           tagName="div"
           className="advanced-card__paragraph"
           value={content}
           onChange={(content) => setAttributes({ content })}
-          placeholder={__('Card content goes here...')}
-      
-        />
+          placeholder={__('Card content goes here...')}/>
       </div>
-      <div className="advanced-card__link-control" 
-      >
+      <div className="advanced-card__link-control">
         <TextControl
           label={__('Card Link URL')}
           value={linkUrl}
@@ -51,6 +43,7 @@ export default function Edit({ attributes, setAttributes }) {
           placeholder={__('https://example.com')}
         />
       </div>
+    </div>
     </div>
   );
 }

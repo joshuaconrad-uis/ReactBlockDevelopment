@@ -28,7 +28,7 @@ export default {
   plugins: [
     ...wpConfig.plugins,
     new MiniCssExtractPlugin({
-      filename: '[name].css',
+      filename: 'style-[name].css',
     }),
   ],
 };
